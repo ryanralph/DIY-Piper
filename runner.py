@@ -4,7 +4,7 @@ import time
 
 printButton = 24
 remember = 25
-printing = False
+
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(remember, GPIO.IN)
 GPIO.setup(printButton, GPIO.IN)
