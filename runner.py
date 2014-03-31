@@ -12,12 +12,12 @@ GPIO.setup(printButton, GPIO.IN)
 while 1:
 	if (GPIO.input(printButton) == True):
 		if GPIO.input(remember) == False:
-			print("Forget")
+#			print("Forget")
 			os.system("sudo python printkeys.py -f 1")
 			time.sleep(10)
 		else:
-			print("Remember")
+#			print("Remember")
 			os.system("sudo python printkeys.py -r 1")
 			time.sleep(10)
-	else:
-		print("switch not pressed")
+#	else:
+#		print("switch not pressed")
