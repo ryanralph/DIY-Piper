@@ -11,6 +11,6 @@ git clone https://github.com/ryanralph/Piper.git
 git clone https://github.com/piperwallet/vanitygen.git
 cd vanitygen/
 make
-mv vanitygen ~/Piper/
-cd ~/Piper
+cp vanitygen ../Piper/
+cd ../Piper
 
