@@ -12,7 +12,7 @@ GPIO.setup(printButton, GPIO.IN)
 GPIO.setup(dataLED, GPIO.OUT)
 
 while 1:
-	if (GPIO.input(printButton) == True):
+	if !(GPIO.input(printButton) == False):
 		if GPIO.input(remember) == False:
 			print("Forget")
 			os.system("sudo ./Piper/printkeys.py -f 1")
