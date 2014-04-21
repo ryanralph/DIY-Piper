@@ -24,4 +24,3 @@ make
 cd ..
 cp vanitygen/vanitygen Piper/
 cd Piper/
-touch serialnumber.txt
