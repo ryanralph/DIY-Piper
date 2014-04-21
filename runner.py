@@ -13,7 +13,7 @@ GPIO.setup(dataLED, GPIO.OUT)
 
 while 1:
 	if (GPIO.input(printButton) == False):
-		GPIO.output(dataLED, False)
+		GPIO.output(dataLED, True)
 		if GPIO.input(remember) == False:
 			print("Forget")
 			os.system("sudo ./Piper/printkeys.py -f 1")
@@ -24,4 +24,4 @@ while 1:
 			time.sleep(10)
 	else:
 #		print("switch not pressed")
-		GPIO.output(dataLED, True)
+		GPIO.output(dataLED, False)
