@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo apt-get update
-sudo apt-get install vim python-pip python-dev build-essential python-serial libpcre3 libpcre3-dev
+sudo apt-get install vim python-pip python-dev build-essential python-serial libpcre3 libpcre3-dev python-qt4
 sudo pip install --upgrade pip
 sudo pip install --upgrade virtualenv
 sudo pip install pillow qrcode pycrypto scrypt ecdsa
