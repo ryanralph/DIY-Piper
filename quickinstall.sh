@@ -11,7 +11,6 @@ sudo pip install ecdsa
 sudo pip install --pre slowaes
 sudo sed -i '$ d' /etc/inittab
 sudo sed -e "s/console=ttyAMA0,115200 kgdboc=ttyAMA0,115200 //g" -i.backup /boot/cmdline.txt
-sudo pip install https://download.electrum.org/Electrum-1.9.8.tar.gz#md5=e3918fec0254267f08e41a1fb8691382
 git clone https://github.com/adafruit/Python-Thermal-Printer.git
 cd Python-Thermal-Printer/
 python printertest.py
