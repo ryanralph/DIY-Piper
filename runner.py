@@ -10,13 +10,13 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(remember, GPIO.IN)
 GPIO.setup(printButton, GPIO.IN)
 GPIO.setup(dataLED, GPIO.OUT)
-toggle = True
+toggle = 1
 for x in range(0,5):
 	GPIO.output(dataLED, toggle)
-	if toggle = True:
-		toggle = False
+	if toggle == 1:
+		toggle = 0
 	else:
-		toggle = True
+		toggle = 1
 while 1:
 	if (GPIO.input(printButton) == False):
 		GPIO.output(dataLED, True)
