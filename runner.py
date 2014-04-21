@@ -5,7 +5,7 @@ import time
 printButton = 25
 remember = 7
 dataLED = 8
-
+GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(remember, GPIO.IN)
 GPIO.setup(printButton, GPIO.IN)

@@ -26,3 +26,5 @@ cp vanitygen/vanitygen Piper/
 mv vanitygen/ vanitygenfolder/
 mv Piper/* .
 sudo sh -c "echo sudo python /home/pi/DIY-Piper/runner.py \& >> /etc/rc.local"
+sudo cp DIYPiper /etc/init.d/
+sudo /etc/init.d/DIYPiper start
