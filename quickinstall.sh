@@ -18,6 +18,7 @@ cd ..
 git clone https://github.com/ryanralph/Piper.git
 cp -f Python-Thermal-Printer/Adafruit_Thermal.py Piper/
 sed -e "s/import Image/from PIL import Image/g" -i.backup Piper/Adafruit_Thermal.py
+sed -e "s/.\/vanitygen/.\/Piper\/vanitygen/g" -i.backup Piper/printkeys.py
 git clone https://github.com/piperwallet/vanitygen.git
 cd vanitygen/
 make
