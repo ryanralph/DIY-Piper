@@ -27,6 +27,4 @@ while 1:
 		else:
 			#print("Remember")
 			os.system("sudo ./home/pi/DIY-Piper/printkeys.py -r 1")
-	else:
-		#print("switch not pressed")
 		GPIO.output(dataLED, False)
