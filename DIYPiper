@@ -1,0 +1,20 @@
+#! /bin/sh
+# /etc/init.d/DIYPiper
+
+
+# Carry out specific functions when asked to by the system
+case "$1" in
+  start)
+    echo "Starting DIY Piper Daemon"
+    sudo python /home/pi/DIY-Piper/runner.py
+    ;;
+  stop)
+    echo "TODO: work out how to stop"
+    ;;
+  *)
+    echo "Usage: /etc/init.d/noip {start|stop}"
+    exit 1
+    ;;
+esac
+
+exit 0
