@@ -1,6 +1,6 @@
 #!/bin/bash
 apt-get update
-apt-get install git python-pip python-dev build-essential python-serial libpcre3 libpcre3-dev
+apt-get install vim python-pip python-dev build-essential python-serial libpcre3 libpcre3-dev
 pip install --upgrade pip
 pip install --upgrade virtualenv
 pip install pillow qrcode pycrypto scrypt slowaes ecdsa
