@@ -17,6 +17,7 @@ for x in range(0,5):
 		toggle = 0
 	else:
 		toggle = 1
+	time.sleep(1)
 while 1:
 	if (GPIO.input(printButton) == False):
 		GPIO.output(dataLED, True)
