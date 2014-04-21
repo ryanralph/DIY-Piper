@@ -9,7 +9,7 @@ dataLED = 8
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(remember, GPIO.IN)
 GPIO.setup(printButton, GPIO.IN)
-GPIO.setup(dataLED, GPIO.OUTPUT)
+GPIO.setup(dataLED, GPIO.OUT)
 
 while 1:
 	if (GPIO.input(printButton) == True):
