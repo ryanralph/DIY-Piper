@@ -13,7 +13,7 @@ case "$1" in
     echo "TODO: work out how to stop"
     ;;
   *)
-    echo "Usage: /etc/init.d/noip {start|stop}"
+    echo "Usage: /etc/init.d/DIYPiper {start|stop}"
     exit 1
     ;;
 esac
