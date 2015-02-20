@@ -19,12 +19,12 @@ for x in range(0,5):
 		toggle = 1
 	time.sleep(1)
 while 1:
-	if (GPIO.input(printButton) == False):
+	if (GPIO.input(printButton) == True):
 		GPIO.output(dataLED, True)
 		if GPIO.input(remember) == False:
-			#print("Forget")
-			os.system("sudo ./home/pi/DIY-Piper/printkeys.py -f 1")
+			print("Forget")
+			os.system("sudo python /home/pi/DIY-Piper/printkeys.py -f 1")
 		else:
-			#print("Remember")
-			os.system("sudo ./home/pi/DIY-Piper/printkeys.py -r 1")
+			print("Remember")
+			os.system("sudo python /home/pi/DIY-Piper/printkeys.py -r 1")
 		GPIO.output(dataLED, False)
